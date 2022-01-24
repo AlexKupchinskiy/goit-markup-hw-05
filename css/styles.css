@@ -83,6 +83,7 @@ body {
 .header-container {
     display: flex;
     align-items: center;
+    height: 80px;
 }
 
 .header-contact {
@@ -223,24 +224,23 @@ body {
     fill: var(--item-color);
 }
 
-.header-nav.current {
+.text-item-studio {
     position: relative;
-}
-
-.list-text.text-item-studio.current {
     color: var(--main-bg-color);
+    display: block;
 }
 
-.text-item-studio.current::after {
+.text-item-studio:hover:after {
     content: "";
-    display: block;
-    height: 4px;
-    width: 100%;
-    background-color: rgba(33, 150, 243, 1);
     position: absolute;
-    bottom: 0;
-    left: 0;
+    /*display: block;*/
+    width: 100%;
+    height: 4px;
+    background: var(--main-bg-color);
     border-radius: 2px;
+    opacity: 1;
+    bottom: -2px;
+    left: 0;
 }
 
 /*-------- оглавление --------*/
@@ -271,15 +271,15 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
-    border-radius: 4px;
-    padding: 10px 32px;
+    /*border-radius: 4px;*/
+    /*padding: 10px 32px;*/
     cursor: pointer;
     /*border: none;*/
     margin-top: 30px;
-    display: inline-block;
+    /*display: inline-block;*/
     border-radius: 4px;
     /* min-width: 70px; */
-    text-align: center;
+    /*text-align: center;*/
 
     padding: 6px 22px;
     transition-property: background-color;
@@ -291,7 +291,7 @@ body {
 .button:hover,
 .button:focus {
     background-color: var(--main-bg-color);
-    color: var(--hero-button-hover);
+    color: var(--background-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
