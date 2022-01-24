@@ -30,10 +30,10 @@
             <a href="/index.html" class="logotype-link">Web<span class="logotype-link-studio">Studio</span></a>
       
             <ul class="list-text">
-              <li class="list-about"><a class="text-item-studio" href="./index.html">Студия</a></li>
+              <li class="list-about"><a class="text-item-studio current" href="./index.html">Студия</a></li>
               <li class="list-about"><a class="text-item" href="./portfolio.html">Портфолио</a></li>
               <li class="list-about"><a class="text-item" href="Контакты">Контакты</a></li>
-            </ul>
+            </ul> 
           </nav>
           <ul class="list-text-about">
             <li class="list-item"><a class="text-item-about" href="mailto:info@devstudio.com">
@@ -55,7 +55,7 @@
       <section class="hero-title overlay">
         <div class="container">
           <h1 class="hero-list">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero-btn" type="button">Заказать услугу</button>
+            <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -107,15 +107,21 @@
     <section class="section-work">
       <div class="container">
         <h2 class="section-work-title"> Чем мы занимаемся </h2>
-          <ul class="contact-link"> 
-            <li><img class="about-photo" src="./image/img-6.jpg" alt="programer-working-his-desk-office"
+          <ul class="doing-image"> 
+            <li class="doing-thumb">
+              <img class="about-photo" src="./image/img-6.jpg" alt="programer-working-his-desk-office"
                 width="370" height="294">
+                <p class="doing-lable">Десктопные приложения</p>
             </li>
-            <li><img class="about-photo" src="./image/img-4.jpg" alt="designers-are-developingis-working"
+            <li class="doing-thumb">
+              <img class="about-photo" src="./image/img-4.jpg" alt="designers-are-developingis-working"
                 width="370" height="294">
+                <p class="doing-lable">Мобильные приложения</p>
             </li>
-            <li><img class="about-photo" src="./image/img-5.jpg" alt="creative-artist-web-design-with-working"
+            <li class="doing-thumb">
+              <img class="about-photo" src="./image/img-5.jpg" alt="creative-artist-web-design-with-working"
                 width="370" height="294">
+                <p class="doing-lable">Дизайнерские решения</p>
             </li>
           </ul>
       </div>
@@ -354,6 +360,18 @@
       </div>
     </div>
   </footer>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-button" data-modal-close><svg class="modal-close" width=18px height=18px>
+        <use href="./image/icons.svg#close-black"></use>
+      </svg>
+
+    </button>
+  </div>
+</div>
+
+<script src="./js/modal.js"></script>
 
  </body>
  </html>
