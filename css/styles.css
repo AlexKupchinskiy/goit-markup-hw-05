@@ -128,7 +128,6 @@ body {
 
 .list-text {
     display: flex;
-
     margin-left: 93px;
 }
 
@@ -205,6 +204,7 @@ body {
     line-height: 1.14;
     list-style: none;
     text-decoration: none;
+    align-items: center;
 }
 
 .icon-email {
@@ -224,22 +224,33 @@ body {
     fill: var(--item-color);
 }
 
-.text-item-studio {
+.text-item-studio.current {
     position: relative;
     color: var(--main-bg-color);
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-.text-item-studio:hover:after {
+.text-item.current {
+    position: relative;
+    color: var(--main-bg-color);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.text-item-studio.current:hover:after,
+.text-item.current:hover:after {
     content: "";
     position: absolute;
-    /*display: block;*/
+    display: block;
     width: 100%;
     height: 4px;
     background: var(--main-bg-color);
     border-radius: 2px;
     opacity: 1;
-    bottom: -2px;
+    bottom: 0px;
     left: 0;
 }
 
