@@ -763,7 +763,8 @@ body {
 
 .footer-item {
     text-decoration: none;
-    margin-bottom: 9px;
+    margin-top: 9px;
+    display: block;
 }
 
 .footer-section {
